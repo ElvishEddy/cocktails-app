@@ -1,7 +1,7 @@
 @use "../../scss" as *;
 
 .cocktail-detail {
-  padding-top: 8rem;
+  padding: 8rem;
   text-align: center;
 
   a {
@@ -44,6 +44,7 @@
 
     p {
       margin-bottom: 30px;
+      line-height: 1.5;
       span {
         margin-right: 8px;
       }

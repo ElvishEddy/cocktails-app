@@ -5,7 +5,7 @@ import CocktailLists from "../../containers/cocktail-lists/CocktailLists";
 export default function Home(props: any) {
   return (
     <main>
-      <SearchForm />
+      <SearchForm searchDinkItem={props.searchDinkItem} />
       <CocktailLists drinks={props.drinks} />
     </main>
   );
