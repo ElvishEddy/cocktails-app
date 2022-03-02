@@ -3,8 +3,7 @@
 .navbar {
   @include flex(center, null);
   height: 4rem;
-  border-bottom: 1px solid rgb(241, 241, 241);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 5px 8px 0px rgb(0 0 0 / 50%);
   position: fixed;
   width: 100%;
   background-color: $light-green;

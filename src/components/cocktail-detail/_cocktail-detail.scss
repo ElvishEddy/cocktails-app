@@ -1,0 +1,59 @@
+@use "../../scss" as *;
+
+.cocktail-detail {
+  padding-top: 8rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    background-color: $dark-green;
+    padding: 7.2px 12.8px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 12.8px;
+    border-radius: $radius;
+
+    &:hover {
+      background-color: $light-green;
+      color: $dark-green;
+    }
+  }
+
+  h1 {
+    margin: 1rem 0 3.5rem;
+  }
+}
+
+.drink {
+  @include flex(center, center);
+
+  &__image {
+    width: 450px;
+
+    img {
+      width: 100%;
+      border-radius: $radius;
+    }
+  }
+
+  &__info {
+    text-align: left;
+    margin-left: 50px;
+    font-weight: 700;
+
+    p {
+      margin-bottom: 30px;
+      span {
+        margin-right: 8px;
+      }
+    }
+  }
+  &__data {
+    background-color: $light-green;
+    color: $dark-green;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: $radius;
+  }
+}
