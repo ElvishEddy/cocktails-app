@@ -1,6 +1,8 @@
 @use "./scss" as *;
 @use "./components/header";
+@use "./pages/home/home";
 @use "./pages/about";
+@use "./pages/error";
 
 .App {
   height: 100%;

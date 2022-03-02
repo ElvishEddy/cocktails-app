@@ -1,0 +1,56 @@
+@use "../../scss" as *;
+
+.cocktail {
+  background-color: $white;
+  width: 368.66px;
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.3s linear;
+  &:hover {
+    box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+
+  &__footer {
+    padding: 1.5rem;
+    h3 {
+      font-size: $bg-size;
+      margin-bottom: 4.8px;
+    }
+
+    h4 {
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.3rem;
+      font-weight: 700;
+    }
+    p {
+      color: #afafaf;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      background-color: $dark-green;
+      padding: 0.25rem 0.4rem;
+      width: 94px;
+      color: $white;
+      letter-spacing: 0.3rem;
+      border-radius: $radius;
+      font-size: 12.8px;
+      text-transform: uppercase;
+      text-align: center;
+      &:hover {
+        background-color: $light-green;
+        color: $dark-green;
+      }
+    }
+  }
+}

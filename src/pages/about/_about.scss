@@ -9,6 +9,10 @@
     text-align: center;
     margin: 16px 0 56px;
     letter-spacing: 0.3rem;
+    color: $dark-green;
+  }
+  h1::selection {
+    color: $light-green;
   }
 
   &__information {
