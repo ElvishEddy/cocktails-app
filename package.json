@@ -1,18 +1,18 @@
 {
-
-  "homepage":"https://elvisheddy.github.io/cocktails-app",
+  "homepage": "https://elvisheddy.github.io/cocktails-app",
   "name": "demo",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^0.26.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.2"
