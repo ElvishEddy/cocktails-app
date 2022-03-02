@@ -1,0 +1,29 @@
+@use "../../scss" as *;
+
+.navbar {
+  @include flex(center, null);
+  height: 4rem;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  background-color: $light-green;
+  &__center {
+    @include flex(center, space-between);
+    width: $max-width;
+    margin: 0 auto;
+  }
+
+  &__logo img {
+    width: 12rem;
+  }
+
+  &__links ul {
+    @include flex(center, null);
+  }
+
+  a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+}

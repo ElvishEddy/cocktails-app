@@ -1,5 +1,11 @@
 @use "./scss" as *;
+@use "./components/header";
+@use "./pages/about";
+
 .App {
-  text-align: center;
   height: 100%;
+}
+
+body {
+  background-color: $light-grey;
 }

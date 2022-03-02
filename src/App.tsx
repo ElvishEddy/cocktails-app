@@ -1,12 +1,22 @@
-import { useState } from "react";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.scss";
+import Navbar from "./components/header/Navbar";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Error from "./pages/error/Error";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </>
   );
 }
 

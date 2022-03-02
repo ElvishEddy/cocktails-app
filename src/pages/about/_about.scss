@@ -1,0 +1,19 @@
+@use "../../scss" as *;
+
+.about {
+  padding-top: 8rem;
+  width: 40rem;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    margin: 16px 0 56px;
+    letter-spacing: 0.3rem;
+  }
+
+  &__information {
+    line-height: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}
